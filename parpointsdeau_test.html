@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>Atlas ETUPO Vallée du Bandama</title>
+    <link rel="stylesheet" href="theme/static/css/style.css" />
+    <link rel="stylesheet" href="theme/static/css/content.css" />
+    <link rel="icon" type="image/x-icon" href="theme/static/images/favicon.ico"/>
+    
+    
+    
+    <!-- appelle la librairie javascript Leaflet et le fichier CSS Leaflet -->	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	
+	<!-- jQuery - indispensable pour utiliser les fichiers geojson -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    
+</head>
+
+<body>
+   <header class="header-bar">
+    <div><a class="header-nav" href="/">
+        <img src="theme/static/images/UElogo.jpeg" alt="Atlas ETUPO Vallée du Bandama logo">
+    </a>
+    <span class="header-title">Atlas ETUPO Vallée du Bandama</span></div>
+    <nav>
+<ul>
+<li><a href="rural.html">Rural</a></li>
+<li><a href="urbain.html">Urbain</a></li>
+<li><a href="parpointsdeau_test.html">Analyse des points d'eau</a>
+<li><a href="vulnerabilite_test.html">Vulnérabilité</a>
+<li class="onglet"><a href="#">Informations</a>
+	<ul class="submenu">
+		<li><a href="#">L'étude</a></li>
+		<li><a href="download.html">Téléchargement</a></li>
+		<li><a href="about.html">Auteurs</a></li>
+		<li><a href="#">Partenaires</a></li>
+		<li><a href="#">Informations légales</a></li>
+	</ul>
+</li>
+<li><a href="index_test.html"><img src="theme/static/images/home_icon.png"></a></li>
+</ul>
+</nav>
+
+
+    
+</header>
+
+    <div class="main"> 
+    
+     
+<div class="content">       
+       
+   <div id="map">
+	
+		
+	
+	</div>
+	
+	<div class="fiche">
+
+[description des procédures de diagnostic des points d'eau et des normes de potabilité de l'eau]
+	
+	
+	
+	</div>
+</div>
+       
+    </div>
+
+   <footer class="footer-bar">
+
+	<img src="theme/static/images/UElogo.jpeg" alt="Urgence Eau logo">
+	<img src="theme/static/images/UECIlogo.jpeg" alt="Urgence Eau - Côte d'Ivoire logo">
+	<span class="footer-text"> <a href="http://urgenceeau.com/">Urgence Eau </a><br>
+	<a href="http://urgenceeau.com/urgence-eau-cote-divoire-ueci/">Urgence Eau - Côte d'Ivoire</a></span>
+    <span class="footer-text">© Urgence Eau 2018-2019</span>
+    <span class="footer-text">Cet Atlas a reçu le soutien la Région Normandie<br> dans le cadre du projet <a href="https://www.normandie.fr/normandie-pour-la-paix">Normandie pour la Paix.</a></span>
+    <img src="theme/static/images/logo_r_normandie-portrait-cmjn.jpg" alt="Region Normandie logo">
+	<img src="theme/static/images/Label_Normandie-pour-la-Paix.jpg" alt="Label Normandie pour la paix logo">
+   <!-- <ul class="footer-list">
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Mentions Légales</a></li>
+    </ul>-->
+</footer>
+
+    <script src="theme/static/js/script.js"></script>
+    <!-- appelle le fichier JS codant la carte de la page -->
+    <script type="text/javascript" src="doc/map_pointseau.js" >
+    
+    </script>
+
+
+   
+</body>
+
+</html>

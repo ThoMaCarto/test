@@ -1,0 +1,173 @@
+/*
+Palette de couleurs
+ Bleu foncé: #1e2c35
+ Bleu moyen: #414f58
+ Marron foncé: #b28a6a
+ Marron clair: #fceedb
+*/
+
+
+/*Corps du site*/
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #192730;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.main {
+  flex-grow: 1;
+  max-height: 80%;
+ 
+   
+}
+/*page d'accueil*/
+#accueil{display:flex;flex-direction:row;justify-content: space-around;text-align: justify;}
+
+.text-accueil{max-width: 60%; padding: 10%;}
+.img-accueil{max-width:40%; padding-right: 5%;}
+
+/*menu principal*/
+
+nav > ul {margin: 0px;padding: 0px;}
+
+nav > ul::after {content:"";display:block;clear:both;}
+
+nav > ul > li{float:right;position: relative;background-color:  #192730;}
+
+nav > ul > li:hover{background-color: rgba(65, 79, 88, 0.15); border-top:5px solid  #1e2c35;}
+
+nav > ul > li:hover a{padding:0px 10px 5px 10px;color: #000;}
+
+nav li {list-style-type: none;  }
+
+nav{ padding:0px;}
+
+nav a{display: inline-block;text-decoration: none;}
+
+nav > ul > li > a{padding: 5px 10px; color: #FFF;}
+
+.submenu{display: none; background-color: #fceedb;}
+
+nav li:hover .submenu{display: inline-block;position: absolute;top:100%;left: 0px;padding: 0px;width: 150%; z-index:100000;} 
+
+.submenu li {border-bottom: 1px solid #CCC;}
+
+.submenu li:hover {background-color:#b28a6a; }
+
+.submenu li:hover a{ color:#FFF; font-weight:bold;}
+
+.submenu li a{padding:5px 10px; font-size: 13px;color: #222538; width: 270px;}
+
+/* En tête de la page */
+.header-bar {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color:#ffffff;
+  box-shadow: 0 1px 0 rgba(12,13,14,0.1),0 1px 6px rgba(59,64,69,0.1);
+  display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ align-items: flex-end;
+}
+
+a.header-nav {
+  text-decoration: none;
+}
+
+a.header-nav img {
+  height: 60px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.header-title {
+  font-size: 30px;
+  color:#2f4858;
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: middle
+}
+
+/* Pied de la page*/
+
+.footer-bar {
+  padding: 5px 20px;
+  margin-top: 5px;
+  background-color:#ffffff;
+  color: #2f4858;
+  font-size: 10px;
+  display: flex;
+   box-shadow: 0px -6px 6px 0px rgba(12,13,14,0.1),0 -1px 6px rgba(59,64,69,0.1);
+  justify-content: space-around;
+}
+
+.footer-bar span {
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.footer-bar img{
+	height: 40px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.footer-bar ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-bar li {
+  margin: 4px 0;
+}
+
+.footer-bar a {
+  color: #33658a;
+  text-decoration: none;
+}
+
+.footer-bar a:hover {
+  color: #6d9dc5;
+}
+
+
+/*carte*/
+.map{
+	height : 100%;
+	width : 70%;
+	border-right : black solid 3px;
+	z-index: 0;
+}
+
+.legend{
+	height : 50%;
+	width : 25%;
+}
+
+
+/* mise en forme des popups de la carte Leaflet */
+.leaflet-popup-tip,
+.leaflet-popup-content-wrapper {
+    background: white;
+    color: black;
+}
+
+.leaflet-control-layers,
+.legendin {
+    padding: 4px 6px;
+    background: white;
+    /* font: 14px/16px Arial, Helvetica, sans-serif; */
+    background: rgba(255,255,255,0.6);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    
+}

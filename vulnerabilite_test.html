@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <title>Atlas ETUPO Vallée du Bandama</title>
+    <link rel="stylesheet" href="theme/static/css/style.css" />
+    <link rel="stylesheet" href="theme/static/css/content.css" />
+    <link rel="icon" type="image/x-icon" href="theme/static/images/favicon.ico"/>
+    
+    
+    
+    <!-- appelle la librairie javascript Leaflet et le fichier CSS Leaflet -->	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	
+	<!-- jQuery - indispensable pour utiliser les fichiers geojson -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    
+</head>
+
+<body>
+   <header class="header-bar">
+    <div><a class="header-nav" href="/">
+        <img src="theme/static/images/UElogo.jpeg" alt="Atlas ETUPO Vallée du Bandama logo">
+    </a>
+    <span class="header-title">Atlas ETUPO Vallée du Bandama</span></div>
+    <nav>
+<ul>
+<li><a href="rural.html">Rural</a></li>
+<li><a href="urbain.html">Urbain</a></li>
+<li><a href="parpointsdeau_test.html">Analyse des points d'eau</a>
+<li><a href="#">Vulnérabilité</a>
+<li class="onglet"><a href="#">Informations</a>
+	<ul class="submenu">
+		<li><a href="#">L'étude</a></li>
+		<li><a href="download.html">Téléchargement</a></li>
+		<li><a href="about.html">Auteurs</a></li>
+		<li><a href="#">Partenaires</a></li>
+		<li><a href="#">Informations légales</a></li>
+	</ul>
+</li>
+<li><a href="index_test.html"><img src="theme/static/images/home_icon.png"></a></li>
+</ul>
+</nav>
+
+
+    
+</header>
+
+    <div class="main"> 
+    
+     
+<div class="content">       
+       
+   <div id="map">
+	
+		
+	
+	</div>
+	
+	<div class="fiche">
+<h3>Les niveaux de vulnérabilité des localités</h3>
+<div>
+<table>
+<thead style="border:3px solid;"></thead>
+<tbody style="border:3px solid;">
+<tr><td style="background-color:DarkSlateGrey;height:10px;width:30px;opacity:1;"></td><td>Vulnérabilité urbaine</td></tr>
+<tr></tr>
+<tr><td style="background-color:Red;height:10px;width:30px;opacity:1;"></td><td>Vulnérabilité forte</td></tr>
+<tr></tr>
+<tr><td style="background-color:Orange;height:10px;width:30px;opacity:1;"></td><td>Vulnérabilité moyenne</td></tr>
+<tr></tr>
+<tr><td style="background-color:Green;height:10px;width:30px;opacity:1;"></td><td>Vulnérabilité faible</td></tr>
+
+
+</tbody>
+</table>
+</div>
+
+<div>
+<h4>Vulnérabilité urbaine</h4>
+<p>Contrairement aux villages, les quartiers de la ville de Bouaké sont constitués de zones dont la vulnérabilité est très hétérogène. La situation de l'accès à l'eau potable et à l'assainissement est particulière en milieu urbain puisque la majorité des habitations sont connectées au réseaux. Les puits privées ou communautaires constituent une source d'eau complémentaire. Enfin, sur la plan de l'assainissement, la plupart des logements sont équipés de latrines sur fosses. La complexité de la vulnérabilité propre au milieu urbain, nous ont conduit à rassembler tous les quartier de Bouaké dans une même catégorie.</p>
+<details>
+<summary>Liste des quartiers renseignés :</summary>
+<ul>
+<li><a href="zone_industrielle_test.html">Zone Industrielle</a></li>
+<li></li>
+</ul>
+</details>
+
+
+</div>
+
+<div>
+<h4 style="color:Red;">Vulnérabilité forte</h4>
+<p>Les villages considérés comme fortement vulnérable sur le plan de l'adduction en eau potable et de l'assainissement ne disposent d'<strong>aucun point d'eau villageois amélioré</strong>. Les villageois s'approvisionnent dans les marigots et rivières souvent polluées et contaminées.</p>
+<details>
+<summary>Liste des villages renseignés :</summary>
+<ul>
+<li><a href="#">[Village 1]</a></li>
+<li></li>
+</ul>
+</details>
+</div>
+
+<div>
+<h4 style="color:Orange;">Vulnérabilité moyenne</h4>
+<p>Les villages considérés comme moyennement vulnérable sur le plan de l'adduction en eau potable et de l'assainissement dispose d'un ou plusieur points d'eau améliorés (puits ou forage équipé d'une pompe), mais ces équipement sont <strong>majoritairement en panne</strong>.</p>
+<details>
+<summary>Liste des villages renseignés :</summary>
+<ul>
+<li><a href="#">[Village 1]</a></li>
+<li></li>
+</ul>
+</details>
+</div>
+
+<div>
+<h4 style="color:Green;">Vulnérabilité faible</h4>
+<p>Les villages considérés comme faiblement vulnérable sur le plan de l'adduction en eau potable et de l'assainissement disposent de plusieurs points d'eau améliorés (puits ou forage équipé d'une pompe), dont <strong>la majorité est en état de marche</strong>. Certains de ces villages sont aussi connecté au réseau d'eau potable géré par la SODECI.</p>
+<details>
+<summary>Liste des villages renseignés :</summary>
+<ul>
+<li><a href="#">[Village 1]</a></li>
+<li></li>
+</ul>
+</details>
+</div>
+
+
+
+
+	
+	
+	
+	</div>
+</div>
+       
+    </div>
+
+   <footer class="footer-bar">
+
+	<img src="theme/static/images/UElogo.jpeg" alt="Urgence Eau logo">
+	<img src="theme/static/images/UECIlogo.jpeg" alt="Urgence Eau - Côte d'Ivoire logo">
+	<span class="footer-text"> <a href="http://urgenceeau.com/">Urgence Eau </a><br>
+	<a href="http://urgenceeau.com/urgence-eau-cote-divoire-ueci/">Urgence Eau - Côte d'Ivoire</a></span>
+    <span class="footer-text">© Urgence Eau 2018-2019</span>
+    <span class="footer-text">Cet Atlas a reçu le soutien la Région Normandie<br> dans le cadre du projet <a href="https://www.normandie.fr/normandie-pour-la-paix">Normandie pour la Paix.</a></span>
+    <img src="theme/static/images/logo_r_normandie-portrait-cmjn.jpg" alt="Region Normandie logo">
+	<img src="theme/static/images/Label_Normandie-pour-la-Paix.jpg" alt="Label Normandie pour la paix logo">
+   <!-- <ul class="footer-list">
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Mentions Légales</a></li>
+    </ul>-->
+</footer>
+
+    <script src="theme/static/js/script.js"></script>
+    <!-- appelle le fichier JS codant la carte de la page -->
+    <script type="text/javascript" src="doc/map_home.js" >
+    
+    </script>
+
+
+   
+</body>
+
+</html>
